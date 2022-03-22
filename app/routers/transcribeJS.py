@@ -10,6 +10,7 @@ load_dotenv()
 
 router = APIRouter()
 templates = Jinja2Templates(directory="templates/")
+os.environ['ASR_API_URL']='https://soroti.herokuapp.com/transcibe'
 
 ASR_API_URL = os.getenv("ASR_API_URL")
 # AUDIO_EXTS = ['.wav', '.WAV', '.mp3', '.MP3', '.m4a', '.M4A'] #Can be extended
