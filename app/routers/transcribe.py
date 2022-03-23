@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="templates/")
 
 ASR_API_URL = os.getenv("ASR_API_URL")
 AUDIO_EXTS = ['.wav', '.WAV', '.mp3', '.MP3', '.m4a', '.M4A'] #Can be extended
-INIT_LANG = 'swc'
+INIT_LANG = 'en'
 
 def get_language_info():
     transcribe_url = ASR_API_URL
